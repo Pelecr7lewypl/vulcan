@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Frekwencja</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Frekwencja</h1>
+</header>
+
+<!-- pasek tygodnia -->
+<div class="week-bar">
+
+  <div class="month">STY</div>
+
+  <div class="days">
+
+    <div class="day" data-day="pon">
+      <span>pon</span>
+      <strong>19</strong>
+    </div>
+
+    <div class="day" data-day="wt">
+      <span>wt</span>
+      <strong>20</strong>
+    </div>
+
+    <div class="day" data-day="sr">
+      <span>śr</span>
+      <strong>21</strong>
+    </div>
+
+    <div class="day active" data-day="czw">
+      <span>czw</span>
+      <strong>22</strong>
+    </div>
+
+    <div class="day" data-day="pt">
+      <span>pt</span>
+      <strong>23</strong>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- TU będą lekcje -->
+<div class="container" id="lessonList"></div>
+
+<nav class="bottom-nav">
+  <a href="index.html" class="nav-item active">
+    <span class="icon">🏠</span>
+    <span>Start</span>
+  </a>
+
+  <a href="plan.html" class="nav-item">
+    <span class="icon">📅</span>
+    <span>Kalendarz</span>
+  </a>
+
+  <a href="frekwencja.html" class="nav-item">
+    <span class="icon">⏰</span>
+    <span>Frekwencja</span>
+  </a>
+
+  <a href="#" class="nav-item locked">
+    <span class="icon">🔔</span>
+    <span class="lock">🔒</span>
+    <span>Powiadomienia</span>
+  </a>
+
+  <a href="#" class="nav-item locked">
+    <span class="icon">✉️</span>
+    <span class="lock">🔒</span>
+    <span>Wiadomości</span>
+  </a>
+
+  <a href="wiecej.html" class="nav-item">
+    <span class="icon">⋯</span>
+    <span>Więcej</span>
+  </a>
+</nav>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,306 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #1f1f2e;
+  color: white;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+
+/* dni tygodnia */
+
+.dni {
+  display: grid;
+  grid-template-columns: 80px repeat(5, 1fr);
+  margin-bottom: 5px;
+}
+
+.dni div {
+  padding: 15px;
+  text-align: center;
+  background: #2f2f45;
+}
+
+/* plan */
+
+.plan {
+  display: grid;
+  grid-template-columns: 80px repeat(5, 1fr);
+}
+
+/* godziny */
+
+.godzina {
+  border-bottom: 1px solid #444;
+  padding: 20px 5px;
+  background: #2f2f45;
+}
+
+/* komórki */
+
+.slot {
+  border: 1px solid #333;
+  min-height: 60px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lesson-row {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #333;
+}
+
+.status {
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+/* lekcja */
+
+.lesson {
+  background: #5a5aff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* przycisk dodawania */
+
+#addBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  font-size: 30px;
+  background: #5a5aff;
+  color: white;
+  cursor: pointer;
+}
+
+/* linia czasu */
+
+#timeLine {
+  position: absolute;
+  left: 80px;
+  right: 0;
+  height: 2px;
+  background: red;
+}
+/* miejsce na pasek */
+body {
+  padding-bottom: 80px;
+}
+
+/* dolna nawigacja */
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background: #2a2a3d;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #444;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+.nav-item div {
+  font-size: 24px;
+}
+.week-bar {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #333;
+  background: #26263a;
+}
+
+.month {
+  margin-right: 20px;
+  color: #5a5aff;
+  font-weight: bold;
+}
+
+.days {
+  display: flex;
+  gap: 20px;
+}
+
+.day {
+  text-align: center;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.day strong {
+  display: block;
+  font-size: 18px;
+}
+
+.day.active {
+  color: #5a5aff;
+  opacity: 1;
+  transform: scale(1.1);
+}
+/* dashboard */
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #2a2a3d;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #5a5aff;
+}
+
+.card-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.welcome {
+  padding: 20px;
+}
+
+.card {
+  background: #2b2d3a;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.date-card {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  color: #4aa3ff;
+}
+
+.lesson-card {
+  background: #e5e5e5;
+  color: #000;
+}
+
+.lesson-line {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.lucky {
+  margin: 20px;
+  padding: 15px;
+  background: linear-gradient(90deg,#3a8cff,#5bb3ff);
+  border-radius: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.section-title {
+  margin: 20px;
+}
+
+.attendance-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.attendance-card {
+  width: 90%;
+  background: #2b2d3a;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 20px;
+}
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background: #1e1e2e;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #2a2a3d;
+}
+
+.nav-item {
+  background: none;
+  border: none;
+  color: #bfc3ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+}
+
+.nav-item .icon {
+  font-size: 20px;
+}
+
+.nav-item.active {
+  color: #4da3ff;
+}
+
+.nav-item.locked {
+  position: relative;
+}
+
+.nav-item .lock {
+  position: absolute;
+  top: 0;
+  right: -6px;
+  font-size: 10px;
+}
+.smile-icon {
+  width: 28px;
+  height: 28px;
+}
+.status-icon {
+  width: 20px;
+  height: 20px;
+}
+
+	
